@@ -1,0 +1,7 @@
+﻿  SdlShow.cpp
+c:\users\dan\downloads\crimson\crimson_test\crimson_test\sdldisplay.hpp(19): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\dan\downloads\crimson\crimson_test\crimson_test\sdldisplay.hpp(21): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\dan\downloads\crimson\crimson_test\crimson_test\sdlplayerdisplay.hpp(14): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\dan\downloads\crimson\crimson_test\crimson_test\sdlshow.hpp(18): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\dan\downloads\crimson\crimson_test\crimson_test\sdlshow.cpp(16): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  crimson_test.vcxproj -> C:\Users\DAN\Downloads\crimson\crimson_test\x64\Debug\crimson_test.exe
