@@ -56,48 +56,48 @@ int	print_error(char *message)
 	exit(1);
 }
 
+/* Hi. It's my try to make this game. Actually,
+** i had only two days for that, so it's a little
+** bit trash code and far far away from perfect, i just recreated some principles
+** plus i didn't used provided framework. Mostly i worked 
+** on macos and c# on windows, so it was easier for me to write my own 
+** functions, that to figure out how to use provided ones. Thank you, that you
+** spend some time, looking on this
+** more of my code you can see here: 
+** C code https://github.com/DA-NDI/Doom_Nukem-oldschool
+** C++ https://github.com/DA-NDI/CPP-Piscine
+** C# https://github.com/DA-NDI/WasteLess
+** Andrii Volgin
+*/
+
 int main(int argc, char *argv[])
 {
 	MyFramework framework;
-	SDL_Window *window;
-	bool	fullscreen;
 	SdlShow game;
 	std::string args[10];
 	int	width;
 	int	height;
+	int enemies;
+	int ammo;
 
-	for (int i = 0; i < argc; i++)
-	{
+	std::srand(std::time(0));
+	for (int i = 0; i < argc && i < 10; i++)
 		args[i] = argv[i];
-	}
-	if (argc == 1)
-	{
-		width = 640;
-		height = 480;
-	}
-	else
+	if (argc == 9) //Here i assume that all args are correct
 	{
 		width = stoi(args[2]);
-		size_t HeightPosition = args[2].find_first_of("X");
+		size_t HeightPosition = args[2].find_first_of("x");
 		height = stoi(args[2], &HeightPosition);
+		enemies = (int)(std::stoi(args[6]));
+		ammo = (int)(std::stoi(args[8]));
 	}
-	game.start(width, height);
-	fullscreen = 0;
-	framework.PreInit(width, height, fullscreen);
-	framework.Init();
-	
-	
-	/*if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0)
-		std::cout << ("Failed to init SDL");
-	if ((window = SDL_CreateWindow("Woo!", SDL_WINDOWPOS_CENTERED, \
-		SDL_WINDOWPOS_CENTERED, width, height, 0)) < 0)
-		std::cout << ("Failed to create window. Exiting");
-	if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG))
-		std::cout << ("Unable to load png");
-	if ((TTF_Init()))
-		std::cout << ("Unable to init ttf");
-	while (1)
-		;*/
+	if (argc != 9 || width > 3000 || height > 3000 || enemies > 200 || enemies < 0 || ammo < 0)
+	{
+		enemies = 7;
+		ammo = 22;
+		width = 1024;
+		height = 768;
+	}
+	game.start(width, height, enemies, ammo);
 	return (0);
-//	return run(new MyFramework);
 }

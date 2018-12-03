@@ -23,7 +23,7 @@ public:
 
 
 public:
-	SDL_Renderer *renderer;
+	SDL_Renderer *render;
 };
 
 #endif

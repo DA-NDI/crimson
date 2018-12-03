@@ -21,7 +21,7 @@ SDL_Texture * SdlDisplay::ft_load_png(std::string path)throw(const char*)
         throw("Unable to load image!");
     else
     {
-        newTexture = SDL_CreateTextureFromSurface( this->renderer, loadedSurface );
+        newTexture = SDL_CreateTextureFromSurface( this->render, loadedSurface );
         if( newTexture == NULL )
             throw( "Unable to create texture from !");
         //Get rid of old loaded surface

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>-window 500x500 -map 1500x1500 -num_enemies 10 -num_ammo 3</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-window 1024x768 -map 1500x1500 -num_enemies 7 -num_ammo 22</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

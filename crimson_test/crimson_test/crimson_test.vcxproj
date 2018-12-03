@@ -129,17 +129,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="SdlBulletDisplay.cpp" />
     <ClCompile Include="SdlDisplay.cpp" />
+    <ClCompile Include="SdlEnemyDisplay.cpp" />
     <ClCompile Include="SdlPlayerDisplay.cpp" />
     <ClCompile Include="SdlShow.cpp" />
+    <ClCompile Include="SdlTargetDisplay.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Framework.h" />
     <ClInclude Include="DisplayInterface.hpp" />
     <ClInclude Include="game.hpp" />
+    <ClInclude Include="SdlBulletDisplay.hpp" />
     <ClInclude Include="SdlDisplay.hpp" />
+    <ClInclude Include="SdlEnemyDisplay.hpp" />
     <ClInclude Include="SdlPlayerDisplay.hpp" />
     <ClInclude Include="SdlShow.hpp" />
+    <ClInclude Include="SdlTargetDisplay.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
